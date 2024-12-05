@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مسابقة الأزهر الشريف للقرآن الكريم</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="bg-light">
+    <!-- Header Section -->
+    <header class="Header">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <h1 class="fs-1 fw-bold text-white text-center">
+          مسابقة الأزهر الشريف السنوية للقرآن الكريم
+        </h1>
+      </div>
+    </header>
+ 
+    <!-- Content Section -->
+    <main class="container mx-auto mt-3">
+      <div class="bg-light rounded-3 shadow-lg p-5">
+        <!-- Image and Description -->
+        <div class="">
+          <div>
+            <h3 class="text-xl font-semibold text-red-600 mb-4">
+              مسابقة الأزهر الشريف السنوية للقرآن الكريم
+            </h3>
+            <p class="text-gray-700 leading-loose">
+              مسابقة قرآنية سنوية برعاية فضيلة الإمام الأكبر شيخ الأزهر، يشارك
+              فيها طلاب المعاهد الأزهرية، وطلاب مكاتب التحفيظ...
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <div class="mt-6">
+          <nav class="rounded-lg shadow-lg p-4 space-y-4 w-full lg:w-1/4 text-white">
+            <ul class="nav justify-content-start">
+             
+              <li class="nav-item">
+                <a class="nav-link" id="show-conditions" data-target="conditions-content" href="#">الشروط العامة للاشتراك</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-apply" data-target="application-content" href="#">طريقة التقدم للمسابقة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-way" data-target="way-content" href="#">الاشتراك في المسابقة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-print" data-target="print-content" href="#">  طباعة استمارة التقديم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-result" data-target="result-content" href="#">    نتيجة المسابقة</a>
+              </li>
+            </ul>
+        
+          </nav>
+        
+          <div id="conditions-content" class="bg-light rounded-3 shadow-lg p-5 mt-4 d-none w-full">
+            <h3 class="fs-4 fw-bold text-gray-900 mb-4 text-center bg-primary-subtle py-2">الشروط العامة للاشتراك في المسابقة</h3>
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">أن يكون المتقدم للمسابقة من:</h5>
+                      
+                          <ul class=" ">
+                              <li>طلاب المعاهد الأزهرية (ابتدائي – إعدادي – ثانوي).</li>
+                              <li>طلاب المكاتب الأهلية الخاضعة لإشراف الأزهر الشريف
+                                  <br> [شريطة عدم قيد الطالب بالمعاهد الأزهرية].
+                              </li>
+                              <li>طلاب الرواق الأزهري
+                                  <br> [شريطة عدم قيد الطالب بالمعاهد الأزهرية، ومكاتب التحفيظ الأهلية].
+                              </li>
+                              <li>ألا تزيد سن المتقدم من مكاتب التحفيظ والأروقة عن 18 عامًا في الأول من أكتوبر من كل عام.</li>
+                          </ul>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">يحق لطلاب:</h5>
+                      <ul class="pl-8">
+                          <li>مكاتب التحفيظ الأهلية، والأروقة، والمرحلة الابتدائية الأزهرية فقط، الاشتراك في المستويات الأربعة.</li>
+                          <li>طلاب المرحلة الإعدادية الأزهرية، يحق لهم الاشتراك في المستويات (الأول والثاني والثالث فقط).</li>
+                          <li>طلاب المرحلة الثانوية الأزهرية، يحق لهم الاشتراك في المستويين (الأول والثاني فقط).</li>
+                      </ul>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mt-4 m-auto">
+                <div class="card border-danger ">
+                  <div class="card-body text-danger">
+                    <h5 class="card-title">لا يحق للطالب:</h5>
+                      <ul class="pl-8">
+                        <li> الاشتراك في أكثر من مستوى في العام الواحد.</li>
+                      </ul>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+           
+          </div>
+
+          <div id="application-content" class="container bg-white rounded shadow-lg p-5 my-4 d-none">
+            <h3 class="text-danger fw-bold mb-4">طريقة التقدم للمسابقة</h3>
+            <p class="text-secondary mb-4">
+              يتم تسليم المرفقات التالية إلى إدارة شئون القرآن الكريم بالمنطقة التابع لها المتسابق حتى تتم مراجعتها في اليوم التالي لانتهاء التسجيل.
+            </p>
+          
+            <!-- Section: طلاب المعاهد الأزهرية -->
+            <div class="mb-5">
+              <h4 class="text-dark fw-semibold mb-3">أولًا: طلاب المعاهد الأزهرية</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  يقوم مشرف مادة القرآن الكريم بالمعهد بالتنسيق مع شيخ المعهد لترشيح الطلاب المؤهلين لكل مستوى.
+                </li>
+                <li class="list-group-item">
+                  يقوم الطالب المرشح بالتقديم للمسابقة إلكترونيًا من خلال استيفاء نموذج التقديم المعلن على بوابة الأزهر الإلكترونية 
+                  <a href="http://www.azhar.eg" class="text-primary text-decoration-none" target="_blank">(http://www.azhar.eg)</a>.
+                </li>
+                <li class="list-group-item">
+                  يقوم الطالب بطباعة استمارة التقدم واستمارة الامتحان، وإحضار المرفقات التالية (أصل شهادة ميلاد الطالب + خطاب ترشيح المعهد) وتسليمها لمشرف مادة القرآن الكريم بالمعهد.
+                </li>
+                <li class="list-group-item">
+                  يقوم المشرف بجمع الاستمارات التابعة لمعهده، ثم يوقع عليها ويعتمدها من موجه شؤون القرآن وشيخ المعهد.
+                </li>
+                <li class="list-group-item">
+                  يتولى شيخ المعهد تسليم استمارات معهده لإدارة شؤون القرآن الكريم بالمنطقة.
+                </li>
+              </ul>
+            </div>
+          
+            <!-- Section: طلاب مكاتب التحفيظ -->
+            <div class="mb-5">
+              <h4 class="text-dark fw-semibold mb-3">ثانيًا: طلاب مكاتب التحفيظ</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  يقوم مشرف مادة القرآن الكريم بالمعهد بالتنسيق مع شيخ المعهد لترشيح الطلاب المؤهلين لكل مستوى.
+                </li>
+                <li class="list-group-item">
+                  يقوم الطالب المرشح بالتقديم للمسابقة إلكترونيًا من خلال استيفاء نموذج التقديم المعلن على بوابة الأزهر الإلكترونية 
+                  <a href="http://www.azhar.eg" class="text-primary text-decoration-none" target="_blank">(http://www.azhar.eg)</a>.
+                </li>
+                <li class="list-group-item">
+                  يقوم الطالب بطباعة استمارة التقدم واستمارة الامتحان، وإحضار المرفقات التالية (أصل شهادة ميلاد الطالب + خطاب ترشيح المعهد) وتسليمها لمشرف مادة القرآن الكريم بالمعهد.
+                </li>
+                <li class="list-group-item">
+                  يقوم المشرف بجمع الاستمارات التابعة لمعهده، ثم يوقع عليها ويعتمدها من موجه شؤون القرآن وشيخ المعهد.
+                </li>
+                <li class="list-group-item">
+                  يتولى شيخ المعهد تسليم استمارات معهده لإدارة شؤون القرآن الكريم بالمنطقة.
+                </li>
+              </ul>
+            </div>
+          </div>
+         
+          
+          <div id="way-content" class="container my-5 d-none">
+            <div class="card shadow-lg border-0">
+              <div class="card-body">
+                <p class="text-center text-muted mb-4">للعام الدراسي 2025/2024</p>
+                <form>
+                  <div class="row g-3">
+                    <!-- Student Name -->
+                    <div class="col-md-6">
+                      <label for="studentName" class="form-label">اسم الطالب</label>
+                      <input type="text" id="studentName" class="form-control" placeholder="أدخل اسم الطالب">
+                    </div>
+                    <!-- Mobile Number -->
+                    <div class="col-md-6">
+                      <label for="mobileNumber" class="form-label">رقم الموبايل / واتس</label>
+                      <input type="text" id="mobileNumber" class="form-control" placeholder="أدخل رقم الموبايل">
+                    </div>
+                    <!-- Region -->
+                    <div class="col-md-6">
+                      <label for="region" class="form-label">المنطقة</label>
+                      <select id="region" class="form-select">
+                        <option selected>اختر المنطقة أولاً</option>
+                        <!-- Add options here -->
+                      </select>
+                    </div>
+                    <!-- Gender -->
+                    <div class="col-md-6">
+                      <label class="form-label">النوع</label>
+                      <div class="form-check form-check-inline">
+                        <input type="radio" id="genderMale" name="gender" class="form-check-input">
+                        <label for="genderMale" class="form-check-label">ذكر</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input type="radio" id="genderFemale" name="gender" class="form-check-input">
+                        <label for="genderFemale" class="form-check-label">أنثى</label>
+                      </div>
+                    </div>
+                    <!-- National ID or Passport -->
+                    <div class="col-md-6">
+                      <label for="nationalID" class="form-label">الرقم القومي أو رقم جواز السفر</label>
+                      <input type="text" id="nationalID" class="form-control" placeholder="أدخل الرقم القومي">
+                    </div>
+                    <!-- Educational Administration -->
+                    <div class="col-md-6">
+                      <label for="administration" class="form-label">الإدارة التعليمية</label>
+                      <select id="administration" class="form-select">
+                        <option selected>اختر</option>
+                        <!-- Add options here -->
+                      </select>
+                    </div>
+                    <!-- Level -->
+                    <div class="col-md-6">
+                      <label for="level" class="form-label">المستوى</label>
+                      <select id="level" class="form-select">
+                        <option selected>اختر</option>
+                        <!-- Add options here -->
+                      </select>
+                    </div>
+                    <!-- Memorization Place -->
+                    <div class="col-md-6">
+                      <label for="memorizationPlace" class="form-label">المرحلة / مكان التحفيظ</label>
+                      <input type="text" id="memorizationPlace" class="form-control" placeholder="أدخل المرحلة أو مكان التحفيظ">
+                    </div>
+                    <!-- Instructor's Name -->
+                    <div class="col-md-6">
+                      <label for="instructorName" class="form-label">اسم محفظ المكتب / اسم الرواق</label>
+                      <input type="text" id="instructorName" class="form-control" placeholder="أدخل اسم المحفظ">
+                    </div>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5">حفظ</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="container form-container d-none" id="print-content">
+            <div class="text-center mb-4">
+              <h1 class="display-5 text-danger">استمارة التقديم</h1>
+              <p>للتسجيل في المسابقة</p>
+            </div>
+            <div class="mb-4 text-center">
+              <label class="form-label">صورة شخصية</label>
+              <div class="photo-placeholder mx-auto">أرفق الصورة هنا</div>
+            </div>
+            <!-- First Step: National ID -->
+            <div class="mb-3">
+              <label for="national-id" class="form-label">الرقم القومي</label>
+              <input type="text" class="form-control" id="national-id" placeholder="أدخل الرقم القومي">
+            </div>
+        
+            <!-- Second Step: Application Form -->
+            <div class="mb-3">
+              <label for="student-name" class="form-label">اسم الطالب</label>
+              <input type="text" class="form-control" id="student-name" placeholder="أدخل اسم الطالب">
+            </div>
+        
+            <div class="mb-3">
+              <label for="birth-date" class="form-label">تاريخ الميلاد</label>
+              <input type="date" class="form-control" id="birth-date">
+            </div>
+        
+            <div class="mb-3">
+              <label for="committee" class="form-label">مكان اللجنة</label>
+              <input type="text" class="form-control" id="committee" placeholder="أدخل مكان اللجنة">
+            </div>
+        
+            <div class="mb-3">
+              <label for="sheikh-name" class="form-label">اسم الشيخ</label>
+              <input type="text" class="form-control" id="sheikh-name" placeholder="أدخل اسم الشيخ">
+            </div>
+    
+            <div class="text-center">
+              <button class="btn btn-primary btn-print" onclick="window.print()">طباعة</button>
+            </div>
+          </div>
+          <div class="container p-4 shadow-lg rounded-3 w-full max-w-md mx-auto mt-5 d-none" id="result-content">
+            <h2 class="text-center text-xl font-bold mb-4">نتيجة المسابقة</h2>
+            
+            <form action="#" method="POST">
+              <!-- رقم القومي -->
+              <div class="mb-4">
+                <label for="national-id" class="form-label">الرقم القومي</label>
+                <input type="text" class="form-control" id="national-id" placeholder="أدخل الرقم القومي">
+              </div>
+          
+              <!-- تاريخ الامتحان -->
+              <div class="mb-4">
+                <label for="exam-date" class="form-label">تاريخ الامتحان</label>
+                <input type="date" id="exam-date" name="exam-date" required class="form-control">
+              </div>
+             
+              <!-- زر الإرسال -->
+              <div class="flex justify-center">
+                <button type="submit" class="btn btn-primary">إرسال</button>
+              </div>
+            </form>
+          </div>
+          
+      </div>
+     
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white p-4 mt-6">
+      <p>العناية بكتاب الله تعالى - حفظا وتلاوة واتقانا وفهما، ونشرا في ربوع العالم</p>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

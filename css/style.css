@@ -1,0 +1,45 @@
+body{
+    font-family: cairo;
+}
+ul{
+    list-style: circle;
+
+}
+.Header{
+    background-image:url('../Purple Ilustration Simple Marhaban ya Ramadhan Facebook Cover (3).png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    height: 80vh;
+}
+.form-container {
+    width: 21cm; /* A4 width */
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .photo-placeholder {
+    border: 1px dashed #999;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+
+  @media print {
+    .btn-print {
+      display: none;
+    }
+  }
+  .nav-link.active {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 0.25rem; 
+  }

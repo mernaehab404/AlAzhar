@@ -14,25 +14,26 @@
   <body class="bg-light">
     <!-- Header Section -->
     <header class="Header">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <h1 class="fs-1 fw-bold text-white text-center">
-          مسابقة الأزهر الشريف السنوية للقرآن الكريم
+      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="fs-1 fw-bold text-white text-center block">
+          مسابقة سلامون الكبري لحفظ القرآن الكريم
         </h1>
+        <p class="fs-4 text-white text-center">بإشراف ورعاية الازهر الشريف</p>
       </div>
     </header>
  
     <!-- Content Section -->
     <main class="container mx-auto mt-3">
-      <div class="bg-light rounded-3 shadow-lg p-5">
+      <div class="bg-light rounded-3 shadow-lg ">
         <!-- Image and Description -->
-        <div class="">
+        <div class="p-5">
           <div>
             <h3 class="text-xl font-semibold text-red-600 mb-4">
-              مسابقة الأزهر الشريف السنوية للقرآن الكريم
+              مسابقة سلامون الكبري السنوية للقرآن الكريم
             </h3>
             <p class="text-gray-700 leading-loose">
               مسابقة قرآنية سنوية برعاية فضيلة الإمام الأكبر شيخ الأزهر، يشارك
-              فيها طلاب المعاهد الأزهرية، وطلاب مكاتب التحفيظ...
+              فيها طلاب المعاهد الأزهرية، و طلاب التربية والتعليم ،وطلاب مكاتب التحفيظ...
             </p>
           </div>
         </div>
@@ -62,29 +63,41 @@
           </nav>
         
           <div id="conditions-content" class="bg-light rounded-3 shadow-lg p-5 mt-4 d-none w-full">
-            <h3 class="fs-4 fw-bold text-gray-900 mb-4 text-center bg-primary-subtle py-2">الشروط العامة للاشتراك في المسابقة</h3>
+            <h3 class="fs-4 fw-bold text-gray-900 text-center bg-primary-subtle py-2">الشروط العامة للاشتراك في المسابقة</h3>
             <div class="row">
-              <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="col-lg-6 mt-4">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">أن يكون المتقدم للمسابقة من:</h5>
                       
                           <ul class=" ">
-                              <li>طلاب المعاهد الأزهرية (ابتدائي – إعدادي – ثانوي).</li>
-                              <li>طلاب المكاتب الأهلية الخاضعة لإشراف الأزهر الشريف
+                            <li>أن يكون الطالب من قرية سلامون القماش (الأب والأم )</li>
+
+                              
+                          </ul>
+                          <h5 class="card-title">الشروط الخاصة بالمسابقة الحرة :</h5>
+                    
+                    <ul>
+                      <li>طلاب المعاهد الأزهرية (ابتدائي – إعدادي – ثانوي).</li>
+                      <li>طلاب التربية والتعليم (ابتدائي – إعدادي – ثانوي).</li>
+                              <li>طلاب المكاتب الأهلية و طلاب الرواق الأزهري
                                   <br> [شريطة عدم قيد الطالب بالمعاهد الأزهرية].
                               </li>
-                              <li>طلاب الرواق الأزهري
-                                  <br> [شريطة عدم قيد الطالب بالمعاهد الأزهرية، ومكاتب التحفيظ الأهلية].
-                              </li>
-                              <li>ألا تزيد سن المتقدم من مكاتب التحفيظ والأروقة عن 18 عامًا في الأول من أكتوبر من كل عام.</li>
-                          </ul>
-                    
-                      
+                            
+                              <li>ألا يقل سن المتقدم عن 18 عامًا في الأول من أكتوبر من  العام الحالي.</li>
+                    </ul>
+                    <h5 class="card-title">الشروط الخاصة بمسابقة الهواة :</h5>
+
+                    <ul>
+                      <li>ألا يكون المتقدم في الأزهر  الشريف(مرحلة جامعية - خريج)</li>
+                      <li>ألا يكون المتقدم شيوخ مكاتب او أئمه مساجد</li>
+                     
+                              <li>ألا يقل سن المتقدم عن 18 عامًا في الأول من أكتوبر من  العام الحالي.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-lg-6 mt-4">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">يحق لطلاب:</h5>
@@ -97,7 +110,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 mt-4 m-auto">
+              <div class="col-lg-6 mt-4 m-auto">
                 <div class="card border-danger ">
                   <div class="card-body text-danger">
                     <h5 class="card-title">لا يحق للطالب:</h5>
@@ -183,34 +196,34 @@
                       <label for="mobileNumber" class="form-label">رقم الموبايل / واتس</label>
                       <input type="text" id="mobileNumber" class="form-control" placeholder="أدخل رقم الموبايل">
                     </div>
-                    <!-- Region -->
                     <div class="col-md-6">
-                      <label for="region" class="form-label">المنطقة</label>
-                      <select id="region" class="form-select">
-                        <option selected>اختر المنطقة أولاً</option>
+                      <label for="mobileNumber2" class="form-label">رقم موبايل ولي الأمر / واتس</label>
+                      <input type="text" id="mobileNumber2" class="form-control" placeholder="أدخل رقم الموبايل">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="address" class="form-label">العنوان</label>
+                      <input type="text" id="address" class="form-control" placeholder="العنوان">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="type" class="form-label">نوع المسابقة</label>
+                      <select id="type" class="form-select">
+                        <option selected>اختر</option>
                         <!-- Add options here -->
                       </select>
                     </div>
-                    <!-- Gender -->
-                    <div class="col-md-6">
-                      <label class="form-label">النوع</label>
-                      <div class="form-check form-check-inline">
-                        <input type="radio" id="genderMale" name="gender" class="form-check-input">
-                        <label for="genderMale" class="form-check-label">ذكر</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input type="radio" id="genderFemale" name="gender" class="form-check-input">
-                        <label for="genderFemale" class="form-check-label">أنثى</label>
-                      </div>
-                    </div>
+                 
                     <!-- National ID or Passport -->
                     <div class="col-md-6">
-                      <label for="nationalID" class="form-label">الرقم القومي أو رقم جواز السفر</label>
+                      <label for="nationalID" class="form-label">الرقم القومي</label>
                       <input type="text" id="nationalID" class="form-control" placeholder="أدخل الرقم القومي">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="nationalID2" class="form-label">الرقم القومي لولي الأمر</label>
+                      <input type="text" id="nationalID2" class="form-control" placeholder=" أدخل الرقم القومي">
                     </div>
                     <!-- Educational Administration -->
                     <div class="col-md-6">
-                      <label for="administration" class="form-label">الإدارة التعليمية</label>
+                      <label for="administration" class="form-label">المرحلة التعليمية</label>
                       <select id="administration" class="form-select">
                         <option selected>اختر</option>
                         <!-- Add options here -->
@@ -224,16 +237,24 @@
                         <!-- Add options here -->
                       </select>
                     </div>
-                    <!-- Memorization Place -->
-                    <div class="col-md-6">
-                      <label for="memorizationPlace" class="form-label">المرحلة / مكان التحفيظ</label>
-                      <input type="text" id="memorizationPlace" class="form-control" placeholder="أدخل المرحلة أو مكان التحفيظ">
-                    </div>
+                  
                     <!-- Instructor's Name -->
                     <div class="col-md-6">
                       <label for="instructorName" class="form-label">اسم محفظ المكتب / اسم الرواق</label>
                       <input type="text" id="instructorName" class="form-control" placeholder="أدخل اسم المحفظ">
                     </div>
+                       <!-- Gender -->
+                       <div class="col-md-6">
+                        <label class="form-label">النوع</label>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" id="genderMale" name="gender" class="form-check-input">
+                          <label for="genderMale" class="form-check-label">ذكر</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" id="genderFemale" name="gender" class="form-check-input">
+                          <label for="genderFemale" class="form-check-label">أنثى</label>
+                        </div>
+                      </div>
                   </div>
                   <!-- Submit Button -->
                   <div class="text-center mt-4">
@@ -244,6 +265,7 @@
             </div>
           </div>
           <div class="container form-container d-none" id="print-content">
+            <p class="d-flex justify-content-end">رقم المتسلسل :</p>
             <div class="text-center mb-4">
               <h1 class="display-5 text-danger">استمارة التقديم</h1>
               <p>للتسجيل في المسابقة</p>
@@ -265,20 +287,27 @@
             </div>
         
             <div class="mb-3">
-              <label for="birth-date" class="form-label">تاريخ الميلاد</label>
+              <label for="birth-date" class="form-label">تاريخ الامتحان</label>
               <input type="date" class="form-control" id="birth-date">
             </div>
         
             <div class="mb-3">
-              <label for="committee" class="form-label">مكان اللجنة</label>
-              <input type="text" class="form-control" id="committee" placeholder="أدخل مكان اللجنة">
+              <label for="committee" class="form-label">رقم اللجنة</label>
+              <input type="text" class="form-control" id="committee" placeholder="أدخل رقم اللجنة" >
             </div>
         
             <div class="mb-3">
               <label for="sheikh-name" class="form-label">اسم الشيخ</label>
               <input type="text" class="form-control" id="sheikh-name" placeholder="أدخل اسم الشيخ">
             </div>
-    
+            <div class="mb-3">
+              <label for="level" class="form-label">المستوى</label>
+              <select id="level" class="form-select">
+                <option selected>اختر</option>
+                <!-- Add options here -->
+              </select>
+            </div>
+            <p class="text-danger fs-6"> اذا كنت اقل من 18 عام بالرجاء احضار  صورة شهادة الميلاد غير ذلك بالرجاء احضار صوره البطاقه الشخصية </p>
             <div class="text-center">
               <button class="btn btn-primary btn-print" onclick="window.print()">طباعة</button>
             </div>

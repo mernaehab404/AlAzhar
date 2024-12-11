@@ -10,34 +10,102 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top ;
-    height: 80vh;
+    height: 40vh;
 }
 .form-container {
-    width: 21cm; /* A4 width */
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  width: 100%; /* Full width for mobile */
+  max-width: 21cm; /* Max A4 size for larger screens */
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.photo-placeholder {
+  border: 1px dashed #999;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin: 0 auto; /* Center the placeholder */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+    width: 90%; /* Reduced width on smaller screens */
   }
 
   .photo-placeholder {
-    border: 1px dashed #999;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    color: #999;
-    text-align: center;
+    width: 120px;
+    height: 120px;
   }
 
-  @media print {
-    .btn-print {
-      display: none;
-    }
+  .form-label {
+    font-size: 14px;
   }
+
+  .form-control, .form-select {
+    font-size: 14px;
+  }
+
+  .btn-print {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 8px;
+  }
+
+  .photo-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .form-control, .form-select {
+    font-size: 12px;
+  }
+
+  .btn-print {
+    font-size: 14px;
+  }
+}
+@media print {
+  /* Hide everything except the #print-content section */
+  body * {
+    visibility: hidden;
+  }
+
+  #print-content, #print-content * {
+    visibility: visible;
+  }
+
+  #print-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px; /* Optional, adjust for margins */
+  }
+
+  /* Hide print button in the print view */
+  .btn-print {
+    display: none;
+  }
+}
+
+
   .nav-link.active {
     background-color: #0056b3;
     color: white;

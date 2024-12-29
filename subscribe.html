@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Header Section -->
+    <header class="Header">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h1 class="fs-1 fw-bold text-white text-center block">
+          مسابقة سلامون الكبري لحفظ القرآن الكريم
+        </h1>
+        <p class="fs-4 text-white text-center">بإشراف ورعاية الازهر الشريف</p>
+      </div>
+    </header>
+     
+    <!-- Content Section -->
+    <main class="container mx-auto mt-3">
+      <div class="bg-light rounded-3 shadow-lg ">
+        <!-- Image and Description -->
+        <div class="p-5">
+          <div>
+            <h3 class="text-xl font-semibold text-red-600 mb-4">
+              مسابقة سلامون الكبري السنوية للقرآن الكريم
+            </h3>
+            <p class="text-gray-700 leading-loose">
+              مسابقة قرآنية سنوية برعاية فضيلة الإمام الأكبر شيخ الأزهر، يشارك
+              فيها طلاب المعاهد الأزهرية، و طلاب التربية والتعليم ،وطلاب مكاتب التحفيظ...
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <div class="mt-6">
+          <nav class="rounded-lg shadow-lg p-4 space-y-4 w-full lg:w-1/4 text-white">
+            <ul class="nav justify-content-start">
+             
+              <li class="nav-item">
+                <a class="nav-link" id="show-conditions"  href="conditions.html">الشروط العامة للاشتراك</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-apply" href="applicationContent.html">طريقة التقدم للمسابقة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-way"  href="subscribe.html">الاشتراك في المسابقة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-print"  href="print.html">  طباعة استمارة التقديم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="show-result"  href="result.html">    نتيجة المسابقة</a>
+              </li>
+            </ul>
+        
+          </nav>
+        
+
+     
+    
+          
+      </div>
+       
+      <div id="way-content" class="container my-5">
+        <div class="card shadow-lg border-0">
+          <div class="card-body">
+            <p class="text-center text-muted mb-4">للعام الدراسي 2025/2024</p>
+            <form>
+              <div class="row g-3">
+                <!-- Student Name -->
+                <div class="col-md-6">
+                  <label for="studentName" class="form-label">اسم الطالب</label>
+                  <input type="text" id="studentName" class="form-control" placeholder="أدخل اسم الطالب">
+                </div>
+                <!-- Mobile Number -->
+                <div class="col-md-6">
+                  <label for="mobileNumber" class="form-label">رقم الموبايل / واتس</label>
+                  <input type="text" id="mobileNumber" class="form-control" placeholder="أدخل رقم الموبايل">
+                </div>
+                <div class="col-md-6">
+                  <label for="mobileNumber2" class="form-label">رقم موبايل ولي الأمر / واتس</label>
+                  <input type="text" id="mobileNumber2" class="form-control" placeholder="أدخل رقم الموبايل">
+                </div>
+                <div class="col-md-6">
+                  <label for="address" class="form-label">العنوان</label>
+                  <input type="text" id="address" class="form-control" placeholder="العنوان">
+                </div>
+                <div class="col-md-6">
+                  <label for="type" class="form-label">نوع المسابقة</label>
+                  <select id="type" class="form-select">
+                    <option selected>اختر</option>
+                    <!-- Add options here -->
+                  </select>
+                </div>
+             
+                <!-- National ID or Passport -->
+                <div class="col-md-6">
+                  <label for="nationalID" class="form-label">الرقم القومي</label>
+                  <input type="text" id="nationalID" class="form-control" placeholder="أدخل الرقم القومي">
+                </div>
+                <div class="col-md-6">
+                  <label for="nationalID2" class="form-label">الرقم القومي لولي الأمر</label>
+                  <input type="text" id="nationalID2" class="form-control" placeholder=" أدخل الرقم القومي">
+                </div>
+                <!-- Educational Administration -->
+                <div class="col-md-6">
+                  <label for="administration" class="form-label">المرحلة التعليمية</label>
+                  <select id="administration" class="form-select">
+                    <option selected>اختر</option>
+                    <!-- Add options here -->
+                  </select>
+                </div>
+                <!-- Level -->
+                <div class="col-md-6">
+                  <label for="level" class="form-label">المستوى</label>
+                  <select id="level" class="form-select">
+                    <option selected>اختر</option>
+                    <!-- Add options here -->
+                  </select>
+                </div>
+              
+                <!-- Instructor's Name -->
+                <div class="col-md-6">
+                  <label for="instructorName" class="form-label">اسم محفظ المكتب / اسم الرواق</label>
+                  <input type="text" id="instructorName" class="form-control" placeholder="أدخل اسم المحفظ">
+                </div>
+                   <!-- Gender -->
+                   <div class="col-md-6">
+                    <label class="form-label">النوع</label>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="genderMale" name="gender" class="form-check-input">
+                      <label for="genderMale" class="form-check-label">ذكر</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" id="genderFemale" name="gender" class="form-check-input">
+                      <label for="genderFemale" class="form-check-label">أنثى</label>
+                    </div>
+                  </div>
+              </div>
+              <!-- Submit Button -->
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary px-5">حفظ</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white p-4 mt-6">
+      <p>العناية بكتاب الله تعالى - حفظا وتلاوة واتقانا وفهما، ونشرا في ربوع العالم</p>
+    </footer>
+  
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+</html>

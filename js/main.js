@@ -23,8 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active");
     });
   });
-  function showSecondForm() {
-    document.getElementById("firstForm").classList.add("d-none");
-    document.getElementById("secondForm").classList.remove("d-none");
-  }
+
 });

@@ -62,10 +62,10 @@
         
           </nav>
 
-          <div class="container p-4 shadow-lg rounded-3 w-full max-w-md mx-auto mt-5" id="result-content">
+          <div class="container p-4 shadow-lg rounded-3 w-full max-w-md mx-auto my-5" id="result-content">
             <h2 class="text-center text-xl font-bold mb-4">نتيجة المسابقة</h2>
             
-            <form action="#" method="POST">
+            <form id="firstForm" class="container w-50" method="POST">
               <!-- رقم القومي -->
               <div class="mb-4">
                 <label for="national-id" class="form-label">الرقم القومي</label>
@@ -73,14 +73,35 @@
               </div>
           
               <!-- تاريخ الامتحان -->
-              <div class="mb-4">
+              <!-- <div class="mb-4">
                 <label for="exam-date" class="form-label">تاريخ الامتحان</label>
                 <input type="date" id="exam-date" name="exam-date" required class="form-control">
-              </div>
+              </div> -->
              
               <!-- زر الإرسال -->
+              <div  class="d-flex justify-content-start">
+                <button type="submit" class="btn btn-primary px-5">النتيجة</button>
+              </div>
+            </form>
+            <form id="secondForm" class="container w-50" action="#" method="POST" class="d-none">
+              <!-- اسم المتسابق  -->
+              <div class="mb-4">
+                <label for="student-name" class="form-label">اسم المتسابق</label>
+                <input readonly type="text" class="form-control" id="student-name" placeholder="أدخل اسمك " value="عبدالله">
+              </div>
+          
+              <!-- نوع المسابقة  -->
+              <div class="mb-4">
+                <label for="type" class="form-label">نوع المسابقة </label>
+                <input readonly type="text" id="type" name="type" required class="form-control" placeholder="نوع المسابقة  " value="مسابقة ثانوية">
+              </div>
+              <div class="mb-4">
+                <label for="statge" class="form-label">المرحلة  </label>
+                <input readonly type="text" id="statge" name="statge" required class="form-control" placeholder="  المرحلة " value="الاولي">
+              </div>
+              <!-- زر الإرسال -->
               <div class="flex justify-center">
-                <button type="submit" class="btn btn-primary">إرسال</button>
+                <button readonly type="submit" class="btn btn-primary">النتيجة</button>
               </div>
             </form>
           </div>

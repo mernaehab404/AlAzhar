@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   const sections = document.querySelectorAll(".d-none");
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
 
-      sections.forEach(section => section.classList.add("d-none"));
+      sections.forEach((section) => section.classList.add("d-none"));
 
       const targetId = this.getAttribute("data-target");
       const targetSection = document.getElementById(targetId);
@@ -15,12 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  const links = document.querySelectorAll('.nav-link');
+  const links = document.querySelectorAll(".nav-link");
 
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      links.forEach(link => link.classList.remove('active'));
-      link.classList.add('active');
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      links.forEach((link) => link.classList.remove("active"));
+      link.classList.add("active");
     });
   });
+  function showSecondForm() {
+    document.getElementById("firstForm").classList.add("d-none");
+    document.getElementById("secondForm").classList.remove("d-none");
+  }
 });
